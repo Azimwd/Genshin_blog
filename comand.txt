@@ -1,0 +1,32 @@
+py -m venv Shop  //create
+
+django-admin startproject Internet_Shop // create project
+
+_______________________________________________________
+
+cd GuideProject
+.\Scripts\activate
+python manage.py runserver
+deactivate //deactivate
+
+git init
+git status
+git add . (or File name)
+git commit -m "Add existing file
+git branch // смотреть ветки
+git branch (Name) //создать ветку
+git branch -D (Name) //delete
+git checkout // переключиться на другую ветку
+git checkout -b new // сразу сосздать и переключиться на другую ветку
+git merge (Name)//совмещение веток
+git reset --hard HEAD //возврат в послед. версию 
+
+
+git config --global user.name (Name) // изменить имя для гит хаб
+git config --global user.email (email) // изменить emal для гит хаб
+git remote add origin https://github.com(/Azimwd/Web_shop.git) // адресс гит хаба
+git push -u origin master // залить в гит хаб
+
+ShopProject\MainApp\costom_password_validation.py
+
+awdwad
