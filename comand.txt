@@ -21,7 +21,7 @@ git checkout -b new // сразу сосздать и переключиться
 git merge (Name)//совмещение веток
 git reset --hard HEAD //возврат в послед. версию 
 
-
+git clone (ссылка)  // скачать с гит
 git config --global user.name (Name) // изменить имя для гит хаб
 git config --global user.email (email) // изменить emal для гит хаб
 git remote add origin https://github.com(/Azimwd/Web_shop.git) // адресс гит хаба
