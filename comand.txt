@@ -28,5 +28,3 @@ git remote add origin https://github.com(/Azimwd/Web_shop.git) // адресс �
 git push -u origin master // залить в гит хаб
 
 ShopProject\MainApp\costom_password_validation.py
-
-awdwad
