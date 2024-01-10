@@ -17,21 +17,6 @@
         <div class="container">
             <div class="block1">
                 <h2>Вход</h2>
-                <!-- <form action="{% url 'login' %}" method="POST">
-                    {% csrf_token %}
-                    <p class="help_text">Имя пользователя</p>
-                    <input type="text"  name="username" placeholder="Имя пользователя">
-        
-                    <p class="help_text">Пароль</p>
-                    <input type="password"  name="password" placeholder="Пароль">
-        
-                    <button type="submit" class="login_bt">Войти</button>
-                    <a class="password_reset" href="{% url 'password_reset' %}">Забыли пароль?</a>
-                    {% if form.errors %}
-                        <p>{{ form.errors.error }}</p>
-                    {% endif %}
-                </form>  -->
-                <!-- wsqe -->
                 <form action="{% url 'login' %}" method="POST">
                     {% csrf_token %}
                     
@@ -41,6 +26,7 @@
                     {{form}}
                     
                     <button type="submit" class="login_bt">Войти</button>
+                    <a class="password_reset" href="{% url 'password_reset' %}">Забыли пароль?</a>
                 </form> 
             </div>
     
@@ -51,7 +37,5 @@
             </div>
         </div>
     </div>
-    
-
 </body>
 </html>

@@ -51,6 +51,7 @@ body{
     margin-bottom: 15px;
     cursor:pointer;
 }
+
 .login_bt:hover {
     background:#f45585;
 }
