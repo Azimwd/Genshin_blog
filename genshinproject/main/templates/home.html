@@ -8,7 +8,11 @@
 <body>
     <p>its home</p>
     <a href="{% url 'login' %}">login</a>
-    <a href="{% url 'logout' %}">logout</a>
     <a href="{% url 'registration' %}">registration</a>
+    <a href="{% url 'logout' %}">logout</a>
+    <form method="post" action="{% url 'logout' %}">
+        {% csrf_token %}
+        <button type="submit">logout</button>
+    </form>
 </body>
 </html>
