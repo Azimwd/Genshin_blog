@@ -1,8 +1,8 @@
 from django.shortcuts import redirect, render
 from django.views import View
 from django.contrib.auth import authenticate,login
-
-from .forms import UserCreationForm
+from django.contrib.auth.views import LoginView
+from .forms import CostmeAuthenticationForm, UserCreationForm
 
 
 class Registration(View):
@@ -28,3 +28,6 @@ class Registration(View):
             'form': form
         }
         return render(request, self.template_name, context)
+    
+class MyLoginView(LoginView):
+    authentication_form = CostmeAuthenticationForm

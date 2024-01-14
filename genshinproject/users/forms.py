@@ -1,8 +1,8 @@
 from django import forms
-from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
+from django.contrib.auth.forms import UserCreationForm, AuthenticationForm, SetPasswordForm
 from django.contrib.auth import get_user_model
 from django.utils.translation import gettext_lazy as _
-from django.contrib.auth.views import LoginView
+from django.contrib.auth.views import LoginView, PasswordResetConfirmView
 
 User = get_user_model()
 
@@ -60,6 +60,8 @@ class CostmeAuthenticationForm(AuthenticationForm):
     }
 
 
-class MyLoginView(LoginView):
-    authentication_form = CostmeAuthenticationForm
+class SetPasswordForm(SetPasswordForm):
 
+    error_messages = {
+        "password_mismatch": _("Два поля пароля не совпадают."),
+    }

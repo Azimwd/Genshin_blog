@@ -12,7 +12,7 @@ deactivate //deactivate
 git init
 git status
 git add . (or File name)
-git commit -m "Add existing file
+git commit -m "Add existing file"
 git branch // смотреть ветки
 git branch (Name) //создать ветку
 git branch -D (Name) //delete
