@@ -1,13 +1,15 @@
 const exit_btn = document.querySelector('.exit');
 const container_mobile = document.querySelector('.container_mobile');
-const menu__btn = document.querySelector('.menu__btn');
+const navbar_mobile = document.querySelector('.navbar_mobile');
+let background_image = document.querySelector('body');
 
-exit_btn.addEventListener('click',()=>{
-    container_mobile.style.display = 'none';
-    menu__btn.style.display = 'block';
-})
 
-menu__btn.addEventListener('click',()=>{
-    container_mobile.style.display = 'block';
-    menu__btn.style.display = 'none';
-})
+window.addEventListener('scroll', function() {
+    console.log(pageYOffset)
+    if(pageYOffset >= 0 && pageYOffset <=100) {
+        background_image.className = 'background_image ' 
+    }
+    else{
+        background_image.className = 'background_image active';
+    }
+});
