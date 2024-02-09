@@ -1,6 +1,12 @@
 from django.shortcuts import render
+from django.http import HttpResponse
+from .models import Charapters
 
-# Create your views here.
 
 def home(request):
-    return render(request, 'home.html')
+    posts = Charapters.objects.all()
+    return render(request, 'home.html', {'posts': posts})
+
+def charapters(request):
+    posts = Charapters.objects.all()
+    return render(request, 'charapters.html', {'posts': posts})

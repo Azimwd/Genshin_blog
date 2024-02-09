@@ -2,6 +2,7 @@ const exit_btn = document.querySelector('.exit');
 const container_mobile = document.querySelector('.container_mobile');
 const navbar_mobile = document.querySelector('.navbar_mobile');
 let background_image = document.querySelector('body');
+const sds = document.querySelector('.wlist p');
 
 
 window.addEventListener('scroll', function() {
@@ -12,4 +13,8 @@ window.addEventListener('scroll', function() {
     else{
         background_image.className = 'background_image active';
     }
+});
+
+sds.addEventListener('click', ()=>{
+    alert('dawda')
 });

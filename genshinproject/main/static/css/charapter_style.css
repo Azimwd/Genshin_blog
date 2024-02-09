@@ -399,3 +399,36 @@ header a{
         font-size: 30px;
     }
 }
+
+.search_container{
+    z-index: 10;
+    margin-left: 50px;
+    position: absolute;
+}
+
+.search_container form input{
+    width: 250px;
+    height: 30px;
+    border: none;
+    border-radius: 15px;
+    background-color: #28283b;
+    padding-left: 20px;
+    font-size: 15px;
+    color: white;
+    outline:none;
+}
+
+.search_container .serach_list ul{
+    font-size: 15px;
+    padding-left: 10px;
+    list-style-type: none;
+}
+
+.search_container .serach_list li{
+    margin-bottom: 10px;
+}
+
+.charapter_list li{
+    display: none;
+    cursor: pointer;
+}

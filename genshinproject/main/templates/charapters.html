@@ -9,21 +9,33 @@
 </head>
 <body>
     <header>
-        <nav>
-            <a href="">Home</a>
-            <a href="">Contacts</a>
-            <a href="">Info</a>
-        </nav>
+
     </header>
+
+    {% for post in posts %}
+        <div class="search_container">
+            <form action="">
+                <input type="text" name="" id="serach_list_id">
+            </form>
+            <div class="serach_list">
+                <ul class="charapter_list">
+                    <li>{{post.title}}</li>
+                    <!-- <li>цуацакцк</li>
+                    <li>цк3к423</li>
+                    <li>ымаыуе</li>
+                    <li>23343</li> -->
+                </ul>
+            </div>
+        </div>
+    {% endfor %}
+
     <!-- carousel -->
     <div class="carousel">
         <!-- list item -->
         <div class="list">
-            <div class="item">
-                
+            <!-- <div class="item">    
                 <img src="{% static 'img/Ayaka.png' %}">
                 <div class="content">
-                    <!-- <div class="author">Глаз бога: Крио</div> -->
                     <div class="title">Аяка</div>
                     <div class="about rating">Рейтинг: S+</div>
                     <div class="about rare">Редкость: ⭐⭐⭐⭐⭐</div>
@@ -34,23 +46,24 @@
                     <div class="video"> <iframe src="https://www.youtube.com/embed/5RCsr1Y8UZA?start=44" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
                    
                 </div>
-            </div>
-            <div class="item">
-                <img src="{% static 'img/Kazuha.png' %}">
-                <div class="content">
-                    <div class="author">LUNDEV</div>
-                    <div class="title">DESIGN SLIDER</div>
-                    <div class="topic">ANIMAL</div>
-                    <div class="des">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
-                    </div>
-                    <div class="buttons">
-                        <button>SEE MORE</button>
-                        <button>SUBSCRIBE</button>
+            </div> -->
+            {% for post in posts %}
+                <div class="item">
+                    <img src="{{ post.photo.url }}">
+                    <div class="content">
+                        <div class="title">{{post.title}}</div>
+                        <div class="about rating">Рейтинг: {{post.rating}}</div>
+                        <div class="about rare">Редкость: {{post.rare}}</div>
+                        <div class="about element">Элемент: {{post.element}}</div>
+                        <div class="buttons">
+                            <button>Подробнее</button>
+                        </div>
+                        <div class="video"> <iframe src="{{post.vide_link}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
                     </div>
                 </div>
-            </div>
-            <div class="item">
+            {% endfor %}
+
+            <!-- <div class="item">
                 <img src="{% static 'img/Shenhe.png' %}">
                 <div class="content">
                     <div class="author">LUNDEV</div>
@@ -79,41 +92,37 @@
                         <button>SUBSCRIBE</button>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
         <!-- list thumnail -->
         <div class="thumbnail">
-            <div class="item">
+            <!-- <div class="item">
                 <img src="{% static 'img/Ayaka.png' %}">
                 <div class="content">
                     <div class="title">
                         Name Slider
                     </div>
-                    <div class="description">
-                        Description
+   
+                </div>
+            </div> -->
+            {% for post in posts %}
+                <div class="item">
+                    <img src="{{ post.photo.url }}">
+                    <div class="content">
+                        <div class="title">
+                            {{ post.title }}
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="item">
-                <img src="{% static 'img/Kazuha.png' %}">
-                <div class="content">
-                    <div class="title">
-                        Name Slider
-                    </div>
-                    <div class="description">
-                        Description
-                    </div>
-                </div>
-            </div>
-            <div class="item">
+            {% endfor %}
+
+            <!-- <div class="item">
                 <img src="{% static 'img/Shenhe.png' %}">
                 <div class="content">
                     <div class="title">
                         Name Slider
                     </div>
-                    <div class="description">
-                        Description
-                    </div>
+
                 </div>
             </div>
             <div class="item">
@@ -122,11 +131,9 @@
                     <div class="title">
                         Name Slider
                     </div>
-                    <div class="description">
-                        Description
-                    </div>
+   
                 </div>
-            </div>
+            </div> -->
         </div>
         <!-- next prev -->
 
@@ -135,8 +142,10 @@
             <button id="next">></button>
         </div>
         <!-- time running -->
-        <div class="time"></div>
+        <!-- <div class="time"></div> -->
     </div>
+
+
 
     <script src="{% static 'js/charapter_app.js' %}"></script>
     

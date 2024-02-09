@@ -1,8 +1,8 @@
 from django.urls import path
-from main.views import home
+from main.views import home, charapters
 from django.views.generic import TemplateView
 urlpatterns = [
-    path('', TemplateView.as_view(template_name='home.html'), name='home'),
-    path('home2', TemplateView.as_view(template_name='home2.html'), name='home'),
-    path('charapters', TemplateView.as_view(template_name='charapters.html'), name='home'),
+    path('', home, name='home'),
+    path('home2', TemplateView.as_view(template_name='home2.html'), name='home2'),
+    path('charapters', charapters, name='charapters'),
 ]

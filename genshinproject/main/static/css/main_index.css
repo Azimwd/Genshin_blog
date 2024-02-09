@@ -1,0 +1,17 @@
+.wlist{
+    overflow-y: scroll;
+}
+
+.wlist button{
+    display: flex;
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.wlist p{
+    cursor: pointer;
+    border-radius: 10px;
+    width: 50px;
+    border: 1px solid red;
+    
+}
