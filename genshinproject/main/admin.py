@@ -8,7 +8,7 @@ User = get_user_model()
 class UserAdmin(UserAdmin):
     pass
 
-from .models import Charapters
+from .models import Characters
 
 
 class ArticleAdmin(admin.ModelAdmin):
@@ -17,4 +17,4 @@ class ArticleAdmin(admin.ModelAdmin):
     search_fields = ('title', 'content')
 
 
-admin.site.register(Charapters, ArticleAdmin)
+admin.site.register(Characters, ArticleAdmin)

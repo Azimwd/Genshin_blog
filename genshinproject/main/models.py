@@ -1,6 +1,6 @@
 from django.db import models
 
-class Charapters(models.Model):
+class Characters(models.Model):
     title = models.CharField(max_length=255)
     rating = models.CharField(max_length=255)
     rare = models.CharField(max_length=255)

@@ -1,0 +1,632 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+    font-family: Roboto;
+}
+
+.main_slaider{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #12121b;
+}
+
+.main_slaider .list .slaid .characters{
+    z-index: 1;
+    margin-left: 30%;
+    margin-top: 4%;
+    width: 35%;
+    animation: chracter_anim 3s ease 0s infinite;
+    animation-fill-mode: forwards;
+    transform: translate();
+}
+
+.main_slaider .list .slaid.second{
+    display: none;
+}
+.main_slaider .list .slaid.third{
+    display: none;
+}
+.main_slaider .list .slaid.fourth{
+    display: none;
+}
+.main_slaider .list .slaid.second{
+    display: none;
+}
+
+@keyframes chracter_anim{
+    0%{
+        margin-top: 4%;
+    }
+    25%{
+        margin-top: 4.5%;
+    }
+    50%{
+        margin-top: 4%;
+    }
+    75%{
+        margin-top: 4.5%;
+    }
+    100%{
+        margin-top: 4%;
+    }
+}
+
+.main_slaider .list .slaid .constellation{
+    margin-top: 90px;
+    margin-left: 48%;
+    width: 25%;
+    border-radius: 10px;
+    position: absolute;
+    z-index: -1;
+}
+
+
+.main_slaider .list .slaid .setimg{
+    cursor: pointer;
+    border-radius: 10px;
+    position: absolute;
+    border: 1px solid rgb(253, 232, 136);
+    background-color: rgb(0, 0, 0);
+    width: 55px;
+    height: 55px;
+
+}
+
+.main_slaider .list .slaid .setimg:hover{
+    border: 1px solid rgb(253, 232, 136);
+    box-shadow:0 0 20px rgb(255, 209, 3);
+}
+
+
+.main_slaider .list .slaid .setimg.weppon{
+    margin-top: 130px;
+    margin-left: 600px;
+}
+
+.main_slaider .list .slaid .setimg.weppon img{
+    width: 55px;
+    height: 55px;
+}
+
+.build_description{
+    border: 1px solid #d3bc8d;
+    border-radius: 10px;
+    margin-left: 260px;
+    margin-top: 390px;
+    background-color: #00000052;
+    position: absolute;
+    width: 300px;
+    height: 470px;
+    color: white;
+    overflow-y: scroll;
+}
+
+.build_description p{
+    margin-top: 20px;  
+    margin-left: 15px;
+    margin-right: 5px;
+}
+
+.description{
+    border: 1px solid #d3bc8d;
+    border-radius: 10px;
+    margin-left: 260px;
+    margin-top: 120px;
+    background-color: #00000052;
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    color: white;
+    display: none;
+    overflow-y: scroll;
+}
+
+
+.description h2{
+    margin-top: 4px;  
+    margin-left: 15px;
+    margin-right: 15px;
+    border-bottom: 1px solid #d3bc8d;
+
+}
+.description img{
+    /* display: inline-block; */
+    margin-top: 0px;
+    margin-left: 10px;
+    border: 1px solid #d3bc8d;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+}
+.description h4{
+    font-weight: 700;
+    margin-left: 70px;
+    margin-top: -45px;  
+}
+.description p{
+    margin-top: 50px;
+    margin-left: 15px;
+    margin-right: 5px;
+}
+
+
+.main_slaider .list .slaid .setimg.watch{
+    margin-top: 190px;
+    margin-left: 680px;
+}
+
+.main_slaider .list .slaid .setimg.watch img{
+    width: 55px;
+    height: 55px;
+}
+
+.main_slaider .list .slaid .setimg.flower{
+    margin-top: 250px;
+    margin-left: 600px;
+}
+
+.main_slaider .list .slaid .setimg.flower img{
+    width: 55px;
+    height: 55px;
+}
+
+.main_slaider .list .slaid .setimg.cup{
+    margin-top: 310px;
+    margin-left: 680px;
+}
+
+.main_slaider .list .slaid .setimg.cup img{
+    width: 55px;
+    height: 55px;
+}
+.main_slaider .list .slaid .setimg.feather{
+    margin-top: 370px;
+    margin-left: 600px;
+}
+
+.main_slaider .list .slaid .setimg.feather img{
+    width: 55px;
+    height: 55px;
+}
+
+.main_slaider .list .slaid .setimg.cap{
+    margin-top: 430px;
+    margin-left: 680px;
+}
+
+.main_slaider .list .slaid .setimg.cap img{
+    width: 55px;
+    height: 55px;
+}
+
+.squad{
+    border-radius: 10px;
+    margin-top: 150px;
+    margin-left: 1450px;
+    position: absolute;
+    width: 400px;
+    height: 425px;
+}
+.insquad{
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(253, 232, 136);
+
+}
+.insquad img{
+    cursor: pointer;
+    padding-left: 6px;
+    width: 22%;
+}
+
+.assembly_name{
+    position: absolute;
+    margin-top: 54px;
+    margin-left:40px;
+    color: white;
+}
+
+.assembly{
+    z-index: 10;
+    margin-left: 30px;
+    width: 200px;
+    height: 500px;
+    margin-top: 110px;
+    background-color: #28283b;
+    position: absolute;
+}
+
+.assembly ul{
+    padding: 0;
+    list-style: none;
+}
+
+.assembly ul li{
+    cursor: pointer;
+    padding-left: 20px;
+    font-size: 18px;
+    padding-bottom: 15px;
+    color: #c1bbb5;
+}
+
+.assembly ul li:hover{
+    color: #ddca9f;
+}
+
+.constimg{
+    cursor: pointer;
+    background-color: black;
+    position: absolute;
+    border: 1px solid #d3bc8d;
+    border-radius: 50%;
+}
+
+.constimg:hover{
+    border: 1px solid rgb(253, 232, 136);
+    box-shadow:0 0 20px rgb(255, 209, 3);
+}
+
+.constimg img{
+    width: 50px;
+    height: 50px;
+}
+.main_slaider .list .slaid .constimg.const1{
+    margin-top: 130px;
+    margin-left: 1250px;
+    width: 50px;
+    height: 50px;
+}
+.main_slaider .list .slaid .constimg.const2{
+    margin-top: 200px;
+    margin-left: 1310px;
+    width: 50px;
+    height: 50px;
+}
+.main_slaider .list .slaid .constimg.const3{
+    margin-top: 270px;
+    margin-left: 1350px;
+    width: 50px;
+    height: 50px;
+}
+.main_slaider .list .slaid .constimg.const4{
+    margin-top: 350px;
+    margin-left: 1350px;
+    width: 50px;
+    height: 50px;
+}
+.main_slaider .list .slaid .constimg.const5{
+    margin-top: 420px;
+    margin-left: 1310px;
+    width: 50px;
+    height: 50px;
+}
+.main_slaider .list .slaid .constimg.const6{
+    margin-top: 490px;
+    margin-left: 1250px;
+    width: 50px;
+    height: 50px;
+}
+
+@media (max-width: 915px){
+
+    .assembly{
+        display: none;
+    }
+
+    .main_slaider{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #12121b;
+    }
+
+    .main_slaider .list .slaid .constellation{
+        opacity: none;
+        width: 40%;
+        text-align: center;
+        margin-top: 20%;
+        margin-left: 52%;
+    }
+    .main_slaider .list .slaid .characters{
+        z-index: 10;
+        margin-left: 0%;
+        text-align: 0%;
+        padding-top: 0%;
+        width: 100%;
+        animation: none;
+        animation-fill-mode: none;
+        transform: none;
+        opacity: none;
+    }
+
+    .main_slaider .list .slaid .assembly_name {
+        display: none;
+        text-align: center;
+        margin-top: 5%;
+        font-weight: 400;
+    }
+    /* description */
+    .build_description{
+        margin: 0;
+        position: absolute;
+        margin-top: 90%;
+        top: 42%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+        height: 25%;
+    }
+
+    .description{
+        margin: 0;
+        position: absolute;
+        margin-top: 90%;
+        top: 15%;
+        left: 50%;
+        width: 70%;
+        height: 25%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)   
+    }
+    
+    .main_slaider .list .slaid .setimg{
+        width:4.5vh;
+        height:4.5vh;
+    }
+    /* artef */
+    .main_slaider .list .slaid .setimg.weppon{
+        margin-top: 10%;
+        margin-left: 4%;
+    }
+    
+    .main_slaider .list .slaid .setimg.weppon img{
+        width:4.5vh;
+        height:4.5vh;
+    }
+
+    .main_slaider .list .slaid .setimg.watch{
+        margin-top: 20%;
+        margin-left: 17%;
+    }
+    
+    .main_slaider .list .slaid .setimg.watch img{
+        width:4.5vh;
+        height:4.5vh;
+    }
+    
+    .main_slaider .list .slaid .setimg.flower{
+        margin-top: 30%;
+        margin-left: 4%;
+    }
+    
+    .main_slaider .list .slaid .setimg.flower img{
+        width:4.5vh;
+        height:4.5vh;
+    }
+    
+    .main_slaider .list .slaid .setimg.cup{
+        margin-top: 40%;
+        margin-left: 17%;
+    }
+    
+    .main_slaider .list .slaid .setimg.cup img{
+        width:4.5vh;
+        height:4.5vh;
+    }
+    .main_slaider .list .slaid .setimg.feather{
+        margin-top: 50%;
+        margin-left: 4%;
+    }
+    
+    .main_slaider .list .slaid .setimg.feather img{
+        width:4.5vh;
+        height:4.5vh;
+    }
+    
+    .main_slaider .list .slaid .setimg.cap{
+        margin-top: 60%;
+        margin-left: 17%;
+    }
+    
+    .main_slaider .list .slaid .setimg.cap img{
+        width:4.5vh;
+        height:4.5vh;
+    }
+    /* const */
+
+    .constimg{
+        cursor: pointer;
+        background-color: black;
+        position: absolute;
+        border: 1px solid #d3bc8d;
+        border-radius: 50%;
+    }
+
+    .constimg img{
+        width:4.5vh;
+        height:4.5vh;
+    }
+
+    .main_slaider .list .slaid .constimg.const1{
+        margin-top: 9%;
+        margin-left: 73%;
+        width:4.5vh;
+        height:4.5vh;
+    }
+    .main_slaider .list .slaid .constimg.const2{
+        margin-top: 18%;
+        margin-left: 83%;
+        width:4.5vh;
+        height:4.5vh;
+    }
+    .main_slaider .list .slaid .constimg.const3{
+        margin-top: 30%;
+        margin-left: 88%;
+        width:4.5vh;
+        height:4.5vh;
+    }
+    .main_slaider .list .slaid .constimg.const4{
+        margin-top: 42%;
+        margin-left: 88%;
+        width:4.5vh;
+        height:4.5vh;
+    }
+    .main_slaider .list .slaid .constimg.const5{
+        margin-top: 54%;
+        margin-left: 83%;
+        width:4.5vh;
+        height:4.5vh;
+    }
+    .main_slaider .list .slaid .constimg.const6{
+        margin-top: 64%;
+        margin-left: 73%;
+        width:4.5vh;
+        height:4.5vh;
+    }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    /* description */
+    .build_description{
+        margin: 0;
+        position: absolute;
+        margin-top: 90%;
+        top: 18%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+        height: 20%;
+    }
+
+    .description{
+        margin: 0;
+        position: absolute;
+        margin-top: 90%;
+        top: -3%;
+        left: 50%;
+        width: 70%;
+        height: 20%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)   
+    }
+
+    .main_slaider .list .slaid .setimg{
+        width:5vh;
+        height:5vh;
+    }
+    /* artef */
+    .main_slaider .list .slaid .setimg.weppon{
+        margin-top: 15%;
+        margin-left: 4%;
+    }
+    
+    .main_slaider .list .slaid .setimg.weppon img{
+        width:5vh;
+        height:5vh;
+    }
+
+    .main_slaider .list .slaid .setimg.watch{
+        margin-top: 22%;
+        margin-left: 12%;
+    }
+    
+    .main_slaider .list .slaid .setimg.watch img{
+        width:5vh;
+        height:5vh;
+    }
+    
+    .main_slaider .list .slaid .setimg.flower{
+        margin-top: 30%;
+        margin-left: 4%;
+    }
+    
+    .main_slaider .list .slaid .setimg.flower img{
+        width:5vh;
+        height:5vh;
+    }
+    
+    .main_slaider .list .slaid .setimg.cup{
+        margin-top: 37%;
+        margin-left: 12%;
+    }
+    
+    .main_slaider .list .slaid .setimg.cup img{
+        width:5vh;
+        height:5vh;
+    }
+    .main_slaider .list .slaid .setimg.feather{
+        margin-top: 45%;
+        margin-left: 4%;
+    }
+    
+    .main_slaider .list .slaid .setimg.feather img{
+        width:5vh;
+        height:5vh;
+    }
+    
+    .main_slaider .list .slaid .setimg.cap{
+        margin-top: 52%;
+        margin-left: 12%;
+    }
+    
+    .main_slaider .list .slaid .setimg.cap img{
+        width:5vh;
+        height:5vh;
+    }
+    /* const */
+
+    .constimg{
+        cursor: pointer;
+        background-color: black;
+        position: absolute;
+        border: 1px solid #d3bc8d;
+        border-radius: 50%;
+    }
+
+    .constimg img{
+        width:5vh;
+        height:5vh;
+    }
+
+    .main_slaider .list .slaid .constimg.const1{
+        margin-top: 9%;
+        margin-left: 70%;
+        width:5vh;
+        height:5vh;
+    }
+    .main_slaider .list .slaid .constimg.const2{
+        margin-top: 18%;
+        margin-left: 83%;
+        width:5vh;
+        height:5vh;
+    }
+    .main_slaider .list .slaid .constimg.const3{
+        margin-top: 30%;
+        margin-left: 88%;
+        width:5vh;
+        height:5vh;
+    }
+    .main_slaider .list .slaid .constimg.const4{
+        margin-top: 42%;
+        margin-left: 88%;
+        width:5vh;
+        height:5vh;
+    }
+    .main_slaider .list .slaid .constimg.const5{
+        margin-top: 54%;
+        margin-left: 83%;
+        width:5vh;
+        height:5vh;
+    }
+    .main_slaider .list .slaid .constimg.const6{
+        margin-top: 64%;
+        margin-left: 73%;
+        width:5vh;
+        height:5vh;
+    }
+}
+

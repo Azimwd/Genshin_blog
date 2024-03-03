@@ -402,12 +402,12 @@ header a{
 
 .search_container{
     z-index: 10;
-    margin-left: 50px;
+    margin-left: 20px;
     position: absolute;
 }
 
 .search_container form input{
-    width: 250px;
+    width: 200px;
     height: 30px;
     border: none;
     border-radius: 15px;
