@@ -2,7 +2,15 @@
 body{
     font-family: Roboto;
 }
-
+.sw {
+    position: relative;
+    z-index: 1000;
+    color: rgb(255, 255, 255);
+}
+.main_slaider .list .slaid.active{
+    display: block;
+    /* margin-top:1000px; */
+}
 .main_slaider{
     position: fixed;
     top: 0;
@@ -236,7 +244,12 @@ body{
     background-color: #28283b;
     position: absolute;
 }
-
+.assembly .exit{
+    display: none;
+    text-align: right;
+    margin-right: 5%;
+    cursor: pointer;
+}
 .assembly ul{
     padding: 0;
     list-style: none;
@@ -307,11 +320,39 @@ body{
     width: 50px;
     height: 50px;
 }
-
+.menu{
+    display: none;
+}
 @media (max-width: 915px){
-
+    .menu{
+        cursor: pointer;
+        display: block;
+        z-index: 10;
+        position: absolute;
+        margin-top: 2%;
+        margin-left: 86%;
+        border: none;
+        background-color: transparent;
+    }
+    .menu img{
+        width:3vh;
+        height:2vh;
+    }
     .assembly{
         display: none;
+        z-index: 10;
+        background-color: #28283b;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        margin-top: 0%;
+        margin-left: 0%;
+        width: 100%;
+        height: 100%;
+    }
+
+    .assembly .exit{
+        display: block;
     }
 
     .main_slaider{
@@ -343,10 +384,19 @@ body{
     }
 
     .main_slaider .list .slaid .assembly_name {
-        display: none;
+        padding-left: 5%;
+        padding-right: 5%;
+        border-radius: 5px;
+        border: 1px solid #d3bc8d;
+        background-color: #12121b;
+        display: block;
         text-align: center;
-        margin-top: 5%;
+        font-size: 120%;
+        margin-left: 50%;
+        margin-top: 88%;
         font-weight: 400;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
     }
     /* description */
     .build_description{
@@ -489,6 +539,38 @@ body{
     }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+    .menu{
+        cursor: pointer;
+        display: block;
+        z-index: 10;
+        position: absolute;
+        margin-top: 2%;
+        margin-left: 89.5%;
+        border: none;
+        background-color: transparent;
+    }
+    .menu img{
+        width:3vh;
+        height:2vh;
+    }
+
+    .main_slaider .list .slaid .assembly_name {
+        padding-left: 5%;
+        padding-right: 5%;
+        border-radius: 5px;
+        border: 1px solid #d3bc8d;
+        background-color: #12121b;
+        display: block;
+        text-align: center;
+        font-size: 110%;
+        margin-left: 50%;
+        margin-top: 4.4%;
+        font-weight: 400;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+    }
+
     /* description */
     .build_description{
         margin: 0;
@@ -531,7 +613,7 @@ body{
 
     .main_slaider .list .slaid .setimg.watch{
         margin-top: 22%;
-        margin-left: 12%;
+        margin-left: 15%;
     }
     
     .main_slaider .list .slaid .setimg.watch img{
@@ -551,7 +633,7 @@ body{
     
     .main_slaider .list .slaid .setimg.cup{
         margin-top: 37%;
-        margin-left: 12%;
+        margin-left: 15%;
     }
     
     .main_slaider .list .slaid .setimg.cup img{
@@ -570,7 +652,7 @@ body{
     
     .main_slaider .list .slaid .setimg.cap{
         margin-top: 52%;
-        margin-left: 12%;
+        margin-left: 15%;
     }
     
     .main_slaider .list .slaid .setimg.cap img{
