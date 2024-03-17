@@ -1,3 +1,4 @@
+"use strict";
 let setimg = document.querySelectorAll('.setimg');
     weppon = document.querySelectorAll('.description.weppon'),
     watch = document.querySelectorAll('.description.watch'),
@@ -26,6 +27,7 @@ let setimg = document.querySelectorAll('.setimg');
     slaid4 = document.querySelector('.slaid.fourth'),
     slaid5 = document.querySelector('.slaid.fifth');
 
+
 change_slaid();
 open_cose_menu();
 show_artefacts_const();
@@ -35,12 +37,7 @@ function change_slaid(){
         assembly_li.forEach((e)=>{
             e.addEventListener('click',()=>{
                 assembly.style.display = 'none';
-            })
-        })
-      } else {
-        assembly_li.forEach((e)=>{
-            e.addEventListener('click',()=>{
-                slaid.forEach((e2)=>{
+                slaid.forEach((e2,i)=>{
                     e2.style.display = 'none';
                     if (e.classList == e2.classList[1]){
                         e2.style.display = 'block';
@@ -49,7 +46,29 @@ function change_slaid(){
                 })
             })
         })
-    }       
+      } else {
+        assembly_li.forEach((e)=>{
+            e.addEventListener('click',()=>{
+                slaid.forEach((e2,i)=>{
+                    e2.style.display = 'none';
+                    if (e.classList == e2.classList[1]){
+                        e2.style.display = 'block';
+
+                        e2.classList.add('animate__animated','animate__backOutRight')
+                            runTimeOut = setTimeout(() => {
+                                e2.classList.add('animate__animated','animate__slideInRight');
+                            }, 500);
+                            runTimeOut = setTimeout(() => {
+                                e2.classList.remove('animate__animated','animate__slideInRight');
+                            }, 1500)
+
+                        list.prepend(e2);
+                    };
+                })
+            })
+        })
+    }
+
 }
 
 function open_cose_menu(){

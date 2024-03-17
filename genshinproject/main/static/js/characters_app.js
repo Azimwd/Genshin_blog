@@ -1,4 +1,4 @@
-//step 1: get DOM
+"use strict";
 let nextDom = document.getElementById('next');
 let prevDom = document.getElementById('prev');
 
@@ -7,10 +7,10 @@ let SliderDom = document.querySelector('.carousel .list');
 let thumbnailBorderDom = document.querySelector('.carousel .thumbnail');
 let thumbnailItemsDom = document.querySelectorAll('.carousel .thumbnail .item');
 let timeDom = document.querySelector('.carousel .time');
-let  charapers_item = document.querySelector('.carousel .list .item');
+let charapers_item = document.querySelector('.carousel .list .item');
 
-let  search_title = document.querySelectorAll('.search_container .serach_list .charapter_list li');
-let  SliderItemsDom = document.querySelectorAll('.carousel .list .item');
+let search_title = document.querySelectorAll('.search_container .serach_list .charapter_list li');
+let SliderItemsDom = document.querySelectorAll('.carousel .list .item');
 
 let timeRunning = 500;
 
@@ -19,7 +19,7 @@ search_title.forEach((e,i)=>{
         SliderItemsDom.forEach((e1,i)=>{
             console.log(((SliderItemsDom[i].innerText).toLowerCase()));
             if((SliderItemsDom[i].innerText).toLowerCase().includes((e.innerText).toLowerCase())){
-                SliderDom.prepend(SliderItemsDom[i]);
+                SliderDom.prepend(e1);
                 thumbnailBorderDom.appendChild(thumbnailItemsDom[i]);
                 carouselDom.classList.add('next');
             }  
